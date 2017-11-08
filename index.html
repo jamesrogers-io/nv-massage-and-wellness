@@ -1,0 +1,413 @@
+<?php
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+    <!-- main stylesheet -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+
+    <link href="./css/slideshow.css" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- NAVIGATION -->
+    <div class="nav__backdrop">
+        <div class="nav container">
+            
+             <!-- DESKTOP NAVIGATION -->
+            <div class="row">
+                <div class="nav__desktop">
+                    <table class="nav__desktop-top">
+                        <tr>
+                            <!-- LOGO -->
+                            <td class="nav__desktop-logo">
+                                <!--<img class="nav__logo" src="./img/nv-logo.png">-->
+                                <i class="fa fa-envira" id="leaf-logo"></i> &nbsp; NAPA VALLEY <strong>MASSAGE & WELLNESS</strong>
+                            </td>
+
+                            <!-- MENU -->
+                            <td class="nav__desktop-bars">
+                                <i class="fa fa-bars"></i>
+                            </td>
+                            
+                            <!-- BOOK ONLINE -->
+                            <td class="nav__desktop-btn">
+                                <button>BOOK ONLINE</button>
+                            </td>
+                            
+                            <!-- RIGHT -->
+                            <td class="nav__desktop-social">
+                                <ul style="text-align: right;">
+                                    <li><i class="fa fa-instagram"></i></li>
+                                    <li><i class="fa fa-yelp"></i></li>
+                                    <li><i class="fa fa-facebook"></i></li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+                    <table class="nav__desktop-bottom">
+                        <tr>
+                            <!-- LOGO -->
+                            <td class="nav__desktop-logo-scrolled">
+                                <!--<img class="nav__logo" src="./img/nv-logo.png">-->
+                                <i class="fa fa-envira" id="leaf-logo"></i> &nbsp; NV<strong>M&W</strong>
+                            </td>
+                            <td class="nav__desktop-links">
+                                <ul>
+                                        <li>Home</li>
+                                        <li>Massage</li>
+                                        <li>Spa Packages</li>
+                                        <li>Body Treatments</li>
+                                        <li>Facials</li>
+                                        <li>Waxing</li>
+                                        <li>Lash Extensions</li>
+                                        <li>Spa Etiquette</li>
+                                        <li>Gift Certificates</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </div><!-- close: DESKTOP NAVIGATION -->
+            </div><!-- close: ROW -->
+
+        </div><!-- close: CONTAINER -->
+    </div><!-- close: NAV -->
+
+    <!-- MOBILE NAVIGATION -->
+    <div class="nav__mobile">
+        <table>
+            <tr>
+                <!-- LEFT -->
+                <td class="nav__mobile-left">
+                    <i class="fa fa-bars nav__mobile-bars"></i>
+                </td>
+                <!-- RIGHT -->
+                <td class="nav__mobile-right">
+                    <!-- <img class="nav__logo" src="./img/nv-logo.png"> -->
+                    <i class="fa fa-envira"></i> &nbsp; NV<strong>M&W</strong>
+                </td>
+            </tr>
+        </table>
+        <!-- MOBILE MENU -->
+        <div class="nav__mobile-menu">
+                <ul class="nav__mobile-menu-content">
+                        <li>HOME</li>
+                        <li>MASSAGE</li>
+                        <li>SPA PACKAGES</li>
+                        <li>GIFT WHATEVER</li>
+                        <li><SEX SERVICES</li>
+                    </ul>
+        </div>
+    </div><!-- close: MOBILE NAV -->
+
+    <!-- INTRO -->
+    <section class="intro">
+        <div class="intro__content">
+            <div class="slideshow-container">
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 3</div>
+                  <img src="./img/wildatheart.jpg" style="width:100%">
+                  <div class="text__background">
+                     <div class="text">
+                         <h1 class="intro__headline">Headline</h1>
+                         <p class="intro__text">This would be some intro text, you know?</p>
+                         <button>CLICK HERE</button>
+                     </div>
+                  </div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 3</div>
+                  <img src="./img/wildatheart.jpg" style="width:100%">
+                  <div class="text__background">
+                     <div class="text">Caption Two</div>
+                  </div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 3</div>
+                  <img src="./img/wildatheart.jpg" style="width:100%">
+                  <div class="text__background">
+                     <div class="text">Caption Three</div>
+                  </div>
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                  <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
+        </div>
+    </section>
+
+    <!-- SECTION 1: big left image, text on right -->
+    <section class="section__one">
+            <div class="row">
+                <!-- LEFT COLUMN -->
+                <div class="section__one-left seven column">
+                    <img src="./img/wildatheart.jpg">
+                </div>
+                <!-- RIGHT COLUMN -->
+                <div class="section__one-right five column">
+                    <h1 class="section__one-heading">Section One</h1>
+                    <p class="section__one-text">This is the text for section one</p>
+                </div>
+            </div><!-- close: ROW -->
+    </section><!-- close: SECTION 1 -->
+
+    <!-- SECTION 2: three boxes -->
+    <section class="section__two">
+            <div class="row">
+                <!-- BOX 1 -->
+                <div class="section__two-block four column">
+                    <img src="./img/wildatheart.jpg">
+                    <h3 class="section__two-heading">Block 1</h3>
+                    <p class="section__two-text">Block 1 Text Description</p>
+                </div>
+
+                <!-- BOX 2 -->
+                <div class="section__two-block four column">
+                    <img src="./img/wildatheart.jpg">
+                    <h3 class="section__two-heading">Block 1</h3>
+                    <p class="section__two-text">Block 1 Text Description</p>
+                </div>
+
+                <!-- BOX 3 -->
+                <div class="section__two-block four column">
+                    <img src="./img/wildatheart.jpg">
+                    <h3 class="section__two-heading">Block 1</h3>
+                    <p class="section__two-text">Block 1 Text Description</p>
+                </div>
+            </div>
+    </section>
+
+    <!-- SECTION 3: big intro-style image with a text box in the center -->
+    <section class="section__three">
+        <!-- OVERLAY -->
+        <div class="section__three-outerbox">
+            <img src="./img/wildatheart.jpg">
+            <div class="section__three-innerbox">
+            <div class="section__three-text-container">
+                <h1 class="section__three-heading">This is a text</h1>
+                <p class="section__three-text">This is the text description</p>
+            </div>
+            </div>
+        </div><!-- close: OVERLAY -->
+    </section>
+
+    <!-- SECTION 4: same as section 1, but reversed. -->
+    <section class="section__four">
+            <div class="row">
+                <!-- LEFT COLUMN -->
+                <div class="section__four-left five column">
+                    <h1 class="section__four-heading">Section Four</h1>
+                    <p class="section__four-text">This is the text for section four</p>               
+                </div>
+                <!-- RIGHT COLUMN -->
+                <div class="section__four-right seven column">
+                    <img src="./img/wildatheart.jpg">
+                </div>
+            </div><!-- close: ROW -->
+    </section><!-- close: SECTION 4 -->
+
+    <!-- SECTION 5: same as section 3, different image -->
+    <section class="section__five">
+        <!-- OVERLAY -->
+        <div class="section__five-outerbox">
+            <img src="./img/wildatheart.jpg">
+            <div class="section__five-innerbox">
+            <div class="section__five-text-container">
+                <h1 class="section__five-heading">This is a text</h1>
+                <p class="section__five-text">This is the text description</p>
+            </div>
+        </div>
+    </div><!-- close: OVERLAY -->
+    </section><!-- close: SECTION 5 -->
+
+    <!-- SECTION 6: same as sections 4 and 1 -->
+    <section class="section__six">
+            <div class="row">
+                <!-- LEFT COLUMN -->
+                <div class="section__six-left five column">
+                    <h1 class="section__four-heading">Section Six</h1>
+                    <p class="section__four-text">This is the text for section six</p>                            
+                </div>
+                <!-- RIGHT COLUMN -->
+                <div class="section__six-right seven column">
+                    <img src="./img/wildatheart.jpg">
+                </div>
+            </div><!-- close: ROW -->
+    </section><!-- close: SECTION 6 -->
+
+    <!-- SECTION 7: mailing list sign-up -->
+    <section class="section__seven">
+        <div class="section__seven-content">
+            <h1 class="section__seven-heading">Section Seven Heading</h1>
+            <p class="section__seven-text">This is section seven's text</p>
+            <input type="email">
+            <button>CLICK ME</button>
+        </div>
+    </section><!-- close: SECTION 7 -->
+
+    <!-- FOOTER 1: full width, sitemap, links -->
+    <section class="footer__one">
+        <div class="twelve column">
+            <ul class="footer__one-list">
+                <li>Contact</li>
+                <li>Gift Certificates</li>
+                <li>Image Gallery</li>
+                <li>Press Recognition</li>
+            </ul>
+        </div>
+    </section><!-- close: FOOTER 1 -->
+
+    <!-- FOOTER 2: contacting sections -->
+    <section class="footer__two">
+        <div class="twelve column">
+            <ul class="footer__two-list">
+                <li>Contact</li>
+                <li>Gift Certificates</li>
+                <li>Image Gallery</li>
+                <li>Press Recognition</li>
+            </ul>
+        </div>
+    </section><!-- close: FOOTER 2 -->
+
+    <!-- ATTRIBUTION -->
+    <section class="attribution__section">
+        <div class="row">
+            <div class="twelve column">
+                <p class="attribution__text">Website Created by James Rogers</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- JQUERY 3.2.1 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <!-- SCRIPTS -->
+    <script type="text/javascript" href="./js/navigation.js"></script>
+    <!-- SCROLL REVEAL -->
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script>
+
+    // SCROLL FUNCTION
+    $(window).scroll(function(){
+
+        if ($(window).scrollTop() >= 400) {
+            $('.nav__desktop').css({
+                "background": "rgba(255, 255, 255, 0.7)"
+            });
+            $('.nav__backdrop').css({
+                "background": "rgba(255, 255, 255, 0.7)"
+            });
+            $('.nav').css({
+                "paddingTop": "0",
+                "paddingBottom": "0",
+                "borderBottom": "1px solid #000"
+            });
+
+            $('.nav__desktop-top').hide();
+            $('.nav__desktop-bottom').show();
+
+        } else {
+            $('.nav').css({
+                "paddingTop": "20px",
+                "paddingBottom": "20px",
+                "borderBottom": "0px",
+                "background": "#fff"
+            });
+            $('.nav__desktop').css({
+                "background": "transparent"
+            });
+
+            $('.nav__desktop-bottom').hide();
+            $('.nav__desktop-top').show();
+        }
+
+        if ($(window).scrollTop() <= 180) {
+            $('.nav__desktop').css({
+                "background": "transparent"
+            });
+        }
+    });
+   </script>
+
+   <script>
+   // DESKTOP CLICK FUNCTION
+    $('.nav__desktop-bars').click(function() {
+        $('.nav__desktop-top').hide();
+        $('.nav__desktop-bottom').show(); 
+    });
+    
+    // MOBILE CLICK FUNCTION
+    $('.nav__mobile-bars').click(function() {
+        
+            // SWITCH ICONS
+            if ($('.nav__mobile-bars').hasClass('fa-bars')) {
+                $('.nav__mobile-bars').removeClass('fa-bars').addClass('fa-times');
+            } else {
+                $('.nav__mobile-bars').removeClass('fa-times').addClass('fa-bars');
+            }
+            
+            // SHOW MOBILE MENU
+            $('.nav__mobile-menu').toggle('slow');
+    });
+   </script>
+
+   <script>
+   //SLIDESHOW
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+    }
+   </script>
+
+   <script>
+   // REVEAL
+    window.sr = ScrollReveal({ reset: true });
+    sr.reveal('.section__one');
+    sr.reveal('.section__two');
+    sr.reveal('.section__three');
+    sr.reveal('.section__four');
+    sr.reveal('.section__five');
+    sr.reveal('.section__six');
+    sr.reveal('.section__seven');
+   </script>
+
+</body>
+</html>
